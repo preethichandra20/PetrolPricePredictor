@@ -1,13 +1,6 @@
 import streamlit as st
 import joblib
 
-@st.cache(allow_output_mutation=True)
-def get_model():
-    from tensorflow.keras.models import load_model
-    model=load_model('model.h5')
-    return model
-
-
 def main():
 
     html_temp = """
